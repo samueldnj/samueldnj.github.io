@@ -1,5 +1,14 @@
 # main links links
 main:
+  - title: "Research"
+    url: {{ site.github.url }}/research/
+
+  - title: "Blog"
+    url: {{ site.github.url }}/blog/
+
+  - title: "Consulting"
+    url: {{ site.github.url }}/consult/
+
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
