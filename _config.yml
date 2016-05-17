@@ -6,12 +6,12 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-CA"
+locale                   : "en"
 title                    : "Samuel Johnson's Site"
 title_separator          : "-"
 name                     : "Samuel D N Johnson"
 description              : "Fisheries ecology and management. CV, research, blog posts and consulting."
-url                      : http://sdnjohnson.com
+url                      : #http://sdnjohnson.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -65,8 +65,8 @@ author:
   avatar           : "bio-pic.jpg"
   bio              : "Aspiring fisheries scientist, aspirational husband, amateur mountaineer and budding ecological consultant."
   location         : "New Westminster, BC"
-  email            : "samueldnjohnson@gmail.com"
-  uri              : "http://sdnjohnson.com"
+  email            : samueldnjohnson@gmail.com
+  uri              : http://sdnjohnson.com
   bitbucket        :
   codepen          :
   dribbble         :
