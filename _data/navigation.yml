@@ -1,25 +1,26 @@
 # main links links
 main:
+  
   - title: "Research"
-    url: {{ site.github.url }}/research/
+    url: /research/
 
   - title: "Blog"
-    url: {{ site.github.url }}/blog/
+    url: /blog/
 
   - title: "Consulting"
-    url: {{ site.github.url }}/consult/
+    url: /consult/
 
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/
 
-  - title: "Sample Posts"
-    url: https://mmistakes.github.io/minimal-mistakes/year-archive/
+  # - title: "Sample Posts"
+  #   url: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
-  - title: "Sample Pages"
-    url: https://mmistakes.github.io/minimal-mistakes/page-archive/
+  # - title: "Sample Pages"
+  #   url: https://mmistakes.github.io/minimal-mistakes/page-archive/
 
-  - title: "Sample Collections"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
+  # - title: "Sample Collections"
+  #   url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
