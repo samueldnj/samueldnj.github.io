@@ -5,4 +5,7 @@ header:
   image: splash.JPG
 ---
 
+
+# This is the first topic
+
 This is the front page of the site.
