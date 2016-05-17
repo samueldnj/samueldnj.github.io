@@ -62,7 +62,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Samuel Johnson"
-  avatar           : "bio-photo.jpg"
+  avatar           : "bio-pic.jpg"
   bio              : "Aspiring fisheries scientist, aspirational husband, amateur mountaineer and budding ecological consultant."
   location         : "New Westminster, British Columbia, Canada"
   email            : "samueldnjohnson@gmail.com"
@@ -149,7 +149,7 @@ kramdown:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "America/Vancouver"
 
 
 # Plugins
