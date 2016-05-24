@@ -5,7 +5,7 @@ header:
 title: About Me
 ---
 
-I'm a Ph. D. student working in the Quantitative Fisheries Research Group, part of the School of Resource and Environmental Management at Simon Fraser University. My senior supervisor is Dr. Sean Cox.
+I'm a PhD student working in the Quantitative Fisheries Research Group, part of the School of Resource and Environmental Management at Simon Fraser University. My senior supervisor is Dr. Sean Cox.
 
 My research is focused on improving ecological sustainability and profitability in multispecies groundfish fisheries. Multispecies interactions between high value target species and low value non-target species can constrain profitability, due to restrictive catch limits and non-selective fishing gear. I'm interested in how to use novel statistical methods and fishery monitoring data to improve assessment and avoidance techniques, leading to a more sustainable and profitable resource.
 
