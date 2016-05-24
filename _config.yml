@@ -8,9 +8,9 @@
 # Site Settings
 locale                   : "en"
 title                    : "Samuel Johnson's Site"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "Samuel D N Johnson"
-description              : "Fisheries ecology and management. CV, research, blog posts and consulting."
+description              : "Fisheries ecology and management researcher and consultant."
 url                      : http://sdnjohnson.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :

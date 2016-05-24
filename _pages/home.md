@@ -10,3 +10,5 @@ I'm a PhD student working in the Quantitative Fisheries Research Group, part of 
 My research is focused on improving ecological sustainability and profitability in multispecies groundfish fisheries. Multispecies interactions between high value target species and low value non-target species can constrain profitability, due to restrictive catch limits and non-selective fishing gear. I'm interested in how to use novel statistical methods and fishery monitoring data to improve assessment and avoidance techniques, leading to a more sustainable and profitable resource.
 
 I received my Master's degree also from Simon Fraser University, where I worked with Dr. Marni Mishna in the Department of Mathematics, countings restricted lattice walks in 2 dimensions.
+
+I'm also available for ecological consulting work, including instructional workshops. My experience lies in quantitative analysis of fisheries data, but I'm familiar with and interested in more general marine and terrestrial ecological systems.
