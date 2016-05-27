@@ -2,7 +2,6 @@
 permalink: /
 header:
   image: splash.JPG
-title: About Me
 ---
 
 I'm a PhD student working in the Quantitative Fisheries Research Group, part of the School of Resource and Environmental Management at Simon Fraser University. My senior supervisor is Dr. Sean Cox.
