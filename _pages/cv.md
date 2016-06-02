@@ -12,7 +12,7 @@ Download a [PDF](http://sdnjohnson.com/files/JohnsonCV.pdf) copy.
 :	Landmark Fisheries Research (Port Moody, BC)
 : *Supervisors:* Sean Cox, Ashleen Benson
 
-2015 - Present: **MITACS Accelerate Intern**
+2015 - 2016: **MITACS Accelerate Intern**
 :	Wild Canadian Sablefish (Steveston, BC)
 : *Supervisors:* Sean Cox, Chris Acheson
 
@@ -24,13 +24,14 @@ Download a [PDF](http://sdnjohnson.com/files/JohnsonCV.pdf) copy.
 
 2014 - 2018 (Expected) *PhD, Resource and Environmental Management*
 : Simon Fraser University (Burnaby, BC)
-: *Thesis title:* Assessment and Avoidance Management Tools for Multispecies Fisheries Constrained by Technical Interactions
 :	*Advisor:* Sean Cox
+: *Thesis title:* Assessment and Avoidance Management Tools for Multispecies Fisheries Constrained by Technical Interactions
+
 
 2010 - 2012: *MSc, Mathematics*
 :	Simon Fraser University (Burnaby, BC)
 : *Advisor:* Marni Mishna
-: *Thesis title:* Asymptotic Analysis of Walks with Small Steps in the Quarter Plane
+: *Thesis title:* [Analytic Combinatorics of Planar Lattice Paths](http://arxiv.org/pdf/1304.6432.pdf)
 
 2005-2009: *B. Mathematics (Hons)*
 : University of Newcastle (Newcastle, NSW)
