@@ -10,7 +10,7 @@ Download a [PDF](http://sdnjohnson.com/files/JohnsonCV.pdf) copy.
 
 2016 - Present: **Sub-contracting Consultant**
 :	Landmark Fisheries Research (Port Moody, BC)
-: *Supervisors:* Sean Cox, Ashleen Benson
+: *Supervisors:* Ashleen Benson, Sean Cox
 
 2015 - 2016: **MITACS Accelerate Intern**
 :	Wild Canadian Sablefish (Steveston, BC)
