@@ -24,22 +24,22 @@ Download a [PDF](http://sdnjohnson.com/files/JohnsonCV.pdf) copy.
 
 2014 - 2018 (Expected) *PhD, Resource and Environmental Management*
 : Simon Fraser University (Burnaby, BC)
-:	*Advisor:* Sean Cox
-: *Thesis title:* Assessment and Avoidance Management Tools for Multispecies Fisheries Constrained by Technical Interactions
+:	*Advisor:* Associate Professor Sean Cox
+: *Thesis title:* Multispecies Management Tools for Multi Sector Fisheries
 
 
 2010 - 2012: *MSc, Mathematics*
 :	Simon Fraser University (Burnaby, BC)
-: *Advisor:* Marni Mishna
+: *Advisor:* Associate Professor Marni Mishna
 : *Thesis title:* [Analytic Combinatorics of Planar Lattice Paths](http://arxiv.org/pdf/1304.6432.pdf)
 
 2005-2009: *B. Mathematics (Hons)*
 : University of Newcastle (Newcastle, NSW)
-: *Honours Advisor:* George Willis
+: *Honours Advisor:* Associate Professor George Willis
 : *Honours Thesis Title:* Simple Groups of Automorphisms of Locally Finite Trees
 
 ## Technical Skills
 
 - I'm proficient in the R statistical language, Auto-Differentiation Model Builder (ADMB) and Python
-- I've conducted closed loop simulations in a management strategy evaluation (MSE) framework for simulated and real fishery management systems
+- I've conducted closed loop simulations in a management strategy evaluation (MSE) framework for simulated and real fishery management systems, including Northern Cod (*Gadus morhua*) in Atlantic Canada and Sablefish (*Anoplopoma fimbria*) in Pacific Canada
 - I'm experienced in teaching technical material in both small and large classroom settings
