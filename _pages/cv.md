@@ -12,6 +12,12 @@ Download a [PDF](http://sdnjohnson.com/files/JohnsonCV.pdf) copy.
 :	Landmark Fisheries Research (Port Moody, BC)
 : *Supervisors:* Ashleen Benson, Sean Cox
 
+2016 - Present: **MITACS Accelerate Intern**
+: Wild Canadian Sablefish (Steveston, BC)
+: Pacific Halibut Management Association (Vancouver, BC)
+: Canadian Groundfish Research and Conservation Society (New Westminster, BC)
+: *Supervisors:* Sean Cox, Chris Acheson, Chris Sporer, Bruce Turris
+
 2015 - 2016: **MITACS Accelerate Intern**
 :	Wild Canadian Sablefish (Steveston, BC)
 : *Supervisors:* Sean Cox, Chris Acheson
