@@ -9,7 +9,7 @@
 locale                   : "en"
 title                    : "Samuel Johnson"
 title_separator          : "|"
-name                     : "Samuel D N Johnson"
+name                     : "Samuel D. N. Johnson"
 description              : "Fisheries ecology and management researcher and consultant."
 url                      : http://sdnjohnson.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
