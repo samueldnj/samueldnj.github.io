@@ -1,4 +1,5 @@
 ---
+permalink: /
 header:
   image: splash.JPG
 ---
