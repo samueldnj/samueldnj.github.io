@@ -9,6 +9,7 @@
 locale                   : "en"
 title                    : "Samuel Johnson"
 title_separator          : "|"
+theme                    : minimal-mistakes-jekyll
 name                     : "Samuel D. N. Johnson"
 description              : "Fisheries ecology and management researcher and consultant."
 url                      : http://sdnjohnson.com
@@ -175,7 +176,7 @@ timezone: America/Vancouver
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
