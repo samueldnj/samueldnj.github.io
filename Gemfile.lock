@@ -116,6 +116,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-default-layout (0.1.4)
       jekyll (~> 3.0)
+    jekyll-docs (3.7.3)
+      jekyll (= 3.7.3)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
     jekyll-gist (1.5.0)
@@ -260,6 +262,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-docs
   minimal-mistakes-jekyll
 
 BUNDLED WITH
