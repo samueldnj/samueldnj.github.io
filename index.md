@@ -1,7 +1,7 @@
 ---
 permalink: /
 header:
-  image: splash.JPG
+  image: RickerPano.JPG
 ---
 
 I'm a PhD student working in the [Quantitative Fisheries Research Group](http://www.quantitativefisheries.com), part of the School of [Resource and Environmental Management](http://rem.sfu.ca) at [Simon Fraser University](http://www.sfu.ca). My senior supervisor is [Dr. Sean Cox](http://www.rem.sfu.ca/people/faculty/seancox/).
