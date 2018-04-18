@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Functional Response
 excerpt: Natural mortality via functional response of a predator
 ---
