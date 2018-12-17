@@ -6,7 +6,7 @@ csl: /Users/sdnjohnson/Work/write/templates/csl/cjfas.csl
 math: true
 output: 
   blogdown::html_page:
-    self_contained: true
+    self_contained: false
     df_print: kable
     keep_md: true
   # pdf_document:
