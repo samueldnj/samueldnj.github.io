@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Samuel D N Johnson</title>
-    <link>/post/</link>
+    <link>http://sdnjohnson.com/post/</link>
     <description>Recent content in Posts on Samuel D N Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://sdnjohnson.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Testing Rmd Support using a Schafer model</title>
-      <link>/post/test-rmd/</link>
+      <link>http://sdnjohnson.com/post/test-rmd/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/test-rmd/</guid>
+      <guid>http://sdnjohnson.com/post/test-rmd/</guid>
       <description>This is version 3 of my personal website. I’ve revised to a Hugo powered blogdown generated website for two reasons. First, it’s a static site generator, similar to Jekyll, serving to keep things simple and fast on the server side. Second, I’ve wanted to start blogging more, and I think the Rmarkdown integration with blogdown and Hugo will help smooth this out.
 This post is a test post for using Rmarkdown to build a simple population dynamics model with process error, and generate some data with observation error.</description>
     </item>
     
     <item>
       <title>Welcome!</title>
-      <link>/post/first-post/</link>
+      <link>http://sdnjohnson.com/post/first-post/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 -0800</pubDate>
       
-      <guid>/post/first-post/</guid>
+      <guid>http://sdnjohnson.com/post/first-post/</guid>
       <description>First Post! Welcome to my blog! I plan to use this blog for two main purposes. The first is as an academic learning resource, where I will write posts that go through new concepts that I&amp;rsquo;m interested in learning about. The second is to develop new research ideas, with a view to refining them into primary publications.
 Most posts will have something to do with Fisheries Science, the field I&amp;rsquo;m actively involved in.</description>
     </item>

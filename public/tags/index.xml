@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Samuel D N Johnson</title>
-    <link>/tags/</link>
+    <link>http://sdnjohnson.com/tags/</link>
     <description>Recent content in Tags on Samuel D N Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://sdnjohnson.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
