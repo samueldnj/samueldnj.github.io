@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3 on Samuel D N Johnson</title>
+    <link>http://sdnjohnson.com/publication_types/3/</link>
+    <description>Recent content in 3 on Samuel D N Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 18 Oct 2018 21:46:24 -0800</lastBuildDate>
+    
+	<atom:link href="http://sdnjohnson.com/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Evaluating the role of data quality when sharing information in hierarchical multi-stock assessment models, with an application to Dover Sole.</title>
+      <link>http://sdnjohnson.com/publication/hierprod/</link>
+      <pubDate>Thu, 18 Oct 2018 21:46:24 -0800</pubDate>
+      
+      <guid>http://sdnjohnson.com/publication/hierprod/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

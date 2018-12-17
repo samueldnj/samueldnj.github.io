@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samuel D N Johnson on Samuel D N Johnson</title>
+    <link>http://sdnjohnson.com/</link>
+    <description>Recent content in Samuel D N Johnson on Samuel D N Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A combinatorial understanding of lattice path asymptotics.</title>
+      <link>http://sdnjohnson.com/publication/latticepathasymptotics/</link>
+      <pubDate>Sun, 16 Dec 2018 21:50:34 -0800</pubDate>
+      
+      <guid>http://sdnjohnson.com/publication/latticepathasymptotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using autonomous video to estimate the bottom-contact area of longline trap gear and presence–absence of sensitive benthic habitat</title>
+      <link>http://sdnjohnson.com/publication/bottomcontact/</link>
+      <pubDate>Sun, 16 Dec 2018 21:50:24 -0800</pubDate>
+      
+      <guid>http://sdnjohnson.com/publication/bottomcontact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing Rmd Support using a Schafer model</title>
+      <link>http://sdnjohnson.com/post/test-rmd/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sdnjohnson.com/post/test-rmd/</guid>
+      <description>
+
+
+&lt;p&gt;This is version 3 of my personal website. I’ve revised to a &lt;a href=&#34;&#34;&gt;Hugo&lt;/a&gt; powered &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt; generated website for two reasons. First, it’s a static site generator, similar to Jekyll, serving to keep things simple and fast on the server side. Second, I’ve wanted to start blogging more, and I think the Rmarkdown integration with blogdown and Hugo will help smooth this out.&lt;/p&gt;
+&lt;p&gt;This post is a test post for using Rmarkdown to build a simple population dynamics model with process error, and generate some data with observation error. Pushing this post to github pages will require working out how &lt;a href = http://www.travis-ci.com&gt;TravisCI&lt;/a&gt; works, which I learned from David Selby’s &lt;a href=&#34;https://selbydavid.com/2017/06/22/blogdown-travis/&#34;&gt;Tea and Stats&lt;/a&gt; blog, which is a handy resource.&lt;/p&gt;
+&lt;p&gt;So, let’s get started by defining a function for the population dynamics model. I’m going to use a Schaefer surplus production model &lt;span class=&#34;citation&#34;&gt;[@schaefer1957some]&lt;/span&gt;. I like to define my Schafer models using optimal equilibrium values, known as &lt;span class=&#34;math inline&#34;&gt;\(B_{MSY}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(U_{MSY}\)&lt;/span&gt; in the fisheries literature, as the leading parameters.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(123)
+
+# Create a function to quickly call for generating biomass
+prodMod &amp;lt;- function(  Umsy = 0.06, 
+                      Bmsy = 42, 
+                      procSigma = 0.1, 
+                      obsSigma = 0.2,
+                      nT = 100 )
+{
+  # Vectors to hold biomass and catch
+  Bt &amp;lt;- numeric( length = nT )
+  Ct &amp;lt;- numeric( length = nT )
+
+  # Create a sequence of harvest rates
+  Utmult &amp;lt;- c(seq(0.1,2,length = 20),seq(2,1, length = 20), rep(1,nT - 40) )
+  Ut &amp;lt;- Utmult * Umsy
+
+  # And draw process errors
+  epst &amp;lt;- rnorm(nT-1, sd = procSigma)
+
+  # Initialise at unfished
+  Bt[1] &amp;lt;- 2 * Bmsy
+  # Take first year&amp;#39;s catch
+  Ct[1] &amp;lt;- Ut[1] * Bt[1]
+
+  # Now loop and fill remaining years
+  for( t in 2:nT )
+  {
+    # Generate non-stochastic biomass
+    Bt[t] &amp;lt;- Bt[t-1] + 2 * Umsy * Bt[t-1] * (1 - Bt[t-1] / Bmsy / 2) - Ct[t-1]
+    # Add process errors
+    Bt[t] &amp;lt;- Bt[t] * exp( epst[t-1])
+    # Take catch
+    Ct[t] &amp;lt;- Bt[t] * Ut[t]
+  }
+
+  # Draw observation errors
+  deltat &amp;lt;- rnorm(nT, sd = obsSigma)
+
+  # Generate absolute index of biomass
+  It &amp;lt;- Bt * exp(deltat)
+
+  # Return biomass, catch and model time dimension
+  outList &amp;lt;- list(  Bt = Bt,
+                    It = It,
+                    Ct = Ct,
+                    nT = nT )
+}
+
+# Generate the biomass
+popSP &amp;lt;- prodMod()
+
+# Plot the biomass and catch
+plot( x = 1:popSP$nT, y = popSP$Bt, xlab = &amp;quot;Year&amp;quot;, ylab = &amp;quot;Biomass and Catch&amp;quot;,
+      ylim = c(0,max(popSP$Bt)), type = &amp;quot;l&amp;quot;, col = &amp;quot;red&amp;quot;, lwd = 2, las = 1  )
+  rect( xleft = 1:popSP$nT-.3, xright = 1:popSP$nT + .3,
+        ybottom = 0, ytop = popSP$Ct, col = &amp;quot;grey40&amp;quot;, border = NA )
+  points( x = 1:popSP$nT, y = popSP$It, pch = 21, col = &amp;quot;grey60&amp;quot;,
+          cex = .8 )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;http://sdnjohnson.com/post/test-Rmd_files/figure-html/unnamed-chunk-1-1.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Our figure shows a 2-way trip, which describes how the biomass declines at first (the first way), then comes back up as catch is decreased (the second way). This is an ideal data set for fisheries stock assessment, as there is contrast in the catch and biomass, making it informative about both the scale of the biomass, helping to estimate &lt;span class=&#34;math inline&#34;&gt;\(B_{MSY}\)&lt;/span&gt;, and the productivity of the stock, helping to estimate &lt;span class=&#34;math inline&#34;&gt;\(U_{MSY}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The next part of this post will fit a TMB model to the data generated from the above biomass. I ran this same tutorial in a seminar for our lab group at SFU this past fall, so I’ll be copying and pasting the code in from there.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome!</title>
+      <link>http://sdnjohnson.com/post/first-post/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sdnjohnson.com/post/first-post/</guid>
+      <description>
+
+&lt;h1 id=&#34;first-post&#34;&gt;First Post!&lt;/h1&gt;
+
+&lt;p&gt;Welcome to my blog! I plan to use this blog for two main purposes. The first is as an academic learning resource, where I will write posts that go through new concepts that I&amp;rsquo;m interested in learning about. The second is to develop new research ideas, with a view to refining them into primary publications.&lt;/p&gt;
+
+&lt;p&gt;Most posts will have something to do with Fisheries Science, the field I&amp;rsquo;m actively involved in. Fisheries science is an applied discipline drawing on the fields of biology, population ecology, statistics, data science, decision analysis, and risk assessment just to name a few. I specialise in fisheries stock assessment modeling, which is the application of population dynamics for the determination of fish stock status. I am also interested in broadening my understanding of ecological theory and new applied tools for testing hypotheses, and improving my science communication skills through better writing, data visualisation.&lt;/p&gt;
+
+&lt;p&gt;Thanks for visiting, and be sure to return for future posts with some more theoretical exposition.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Evaluating the role of data quality when sharing information in hierarchical multi-stock assessment models, with an application to Dover Sole.</title>
+      <link>http://sdnjohnson.com/publication/hierprod/</link>
+      <pubDate>Thu, 18 Oct 2018 21:46:24 -0800</pubDate>
+      
+      <guid>http://sdnjohnson.com/publication/hierprod/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
