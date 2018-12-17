@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 on Samuel D N Johnson</title>
-    <link>http://sdnjohnson.com/publication_types/2/</link>
+    <link>/publication_types/2/</link>
     <description>Recent content in 2 on Samuel D N Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 16 Dec 2018 21:50:34 -0800</lastBuildDate>
     
-	<atom:link href="http://sdnjohnson.com/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A combinatorial understanding of lattice path asymptotics.</title>
-      <link>http://sdnjohnson.com/publication/latticepathasymptotics/</link>
+      <link>/publication/latticepathasymptotics/</link>
       <pubDate>Sun, 16 Dec 2018 21:50:34 -0800</pubDate>
       
-      <guid>http://sdnjohnson.com/publication/latticepathasymptotics/</guid>
+      <guid>/publication/latticepathasymptotics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using autonomous video to estimate the bottom-contact area of longline trap gear and presence–absence of sensitive benthic habitat</title>
-      <link>http://sdnjohnson.com/publication/bottomcontact/</link>
+      <link>/publication/bottomcontact/</link>
       <pubDate>Sun, 16 Dec 2018 21:50:24 -0800</pubDate>
       
-      <guid>http://sdnjohnson.com/publication/bottomcontact/</guid>
+      <guid>/publication/bottomcontact/</guid>
       <description></description>
     </item>
     

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publication_types on Samuel D N Johnson</title>
-    <link>http://sdnjohnson.com/publication_types/</link>
+    <link>/publication_types/</link>
     <description>Recent content in Publication_types on Samuel D N Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 16 Dec 2018 21:50:34 -0800</lastBuildDate>
     
-	<atom:link href="http://sdnjohnson.com/publication_types/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/publication_types/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2</title>
-      <link>http://sdnjohnson.com/publication_types/2/</link>
+      <link>/publication_types/2/</link>
       <pubDate>Sun, 16 Dec 2018 21:50:34 -0800</pubDate>
       
-      <guid>http://sdnjohnson.com/publication_types/2/</guid>
+      <guid>/publication_types/2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>3</title>
-      <link>http://sdnjohnson.com/publication_types/3/</link>
+      <link>/publication_types/3/</link>
       <pubDate>Thu, 18 Oct 2018 21:46:24 -0800</pubDate>
       
-      <guid>http://sdnjohnson.com/publication_types/3/</guid>
+      <guid>/publication_types/3/</guid>
       <description></description>
     </item>
     
