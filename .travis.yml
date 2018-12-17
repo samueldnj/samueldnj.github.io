@@ -4,7 +4,10 @@ sudo: false
 
 branches:
   only:
-    - master
+    - source
+
+r_github_packages:
+    - rstudio/blogdown
 
 cache:
   packages: yes
