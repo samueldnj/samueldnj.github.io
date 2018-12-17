@@ -13,7 +13,7 @@ title: Research and Publications
 
 ### 2016
 
-Dohery, B., **Johnson, S. D. N.**, and Cox, S. P. *[Using autonomous video to estimate the bottom-contact area of longline trap gear and presence–absence of sensitive benthic habitat.](https://doi.org/10.1139/cjfas-2016-0483){:target="_blank"}* Canadian Journal of Fisheries and Aquatic Sciences
+Doherty, B., **Johnson, S. D. N.**, and Cox, S. P. *[Using autonomous video to estimate the bottom-contact area of longline trap gear and presence–absence of sensitive benthic habitat.](https://doi.org/10.1139/cjfas-2016-0483){:target="_blank"}* Canadian Journal of Fisheries and Aquatic Sciences
 
 ## Discrete Mathematics
 ### 2018
