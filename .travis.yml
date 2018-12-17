@@ -23,6 +23,5 @@ deploy:
   github_token: $GITHUB_PAT
   on:
       branch: source
-  local_dir: public
+  local_dir: ./public
   target_branch: master
-  fqdn: sdnjohnson.com
