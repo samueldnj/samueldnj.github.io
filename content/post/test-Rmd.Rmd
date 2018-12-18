@@ -1,6 +1,6 @@
 ---
 title: "Testing Rmd Support using a Schafer model"
-date: 2018-12-17
+date: \today
 math: true
 bibliography: library.bib
 output: 
