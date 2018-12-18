@@ -39,7 +39,7 @@
 
 &lt;p&gt;This is version 3 of my personal website. I’ve revised to a &lt;a href=&#34;&#34;&gt;Hugo&lt;/a&gt; powered &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt; generated website for two reasons. First, it’s a static site generator, similar to Jekyll, serving to keep things simple and fast on the server side. Second, I’ve wanted to start blogging more, and I think the Rmarkdown integration with blogdown and Hugo will help smooth this out.&lt;/p&gt;
 &lt;p&gt;This post is a test post for using Rmarkdown to build a simple population dynamics model with process error, and generate some data with observation error. Pushing this post to github pages will require working out how &lt;a href = http://www.travis-ci.com&gt;TravisCI&lt;/a&gt; works, which I learned from David Selby’s &lt;a href=&#34;https://selbydavid.com/2017/06/22/blogdown-travis/&#34;&gt;Tea and Stats&lt;/a&gt; blog, which is a handy resource.&lt;/p&gt;
-&lt;p&gt;So, let’s get started by defining a function for the population dynamics model. I’m going to use a Schaefer surplus production model &lt;span class=&#34;citation&#34;&gt;[@schaefer1957some]&lt;/span&gt;. I like to define my Schafer models using optimal equilibrium values, known as &lt;span class=&#34;math inline&#34;&gt;\(B_{MSY}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(U_{MSY}\)&lt;/span&gt; in the fisheries literature, as the leading parameters.&lt;/p&gt;
+&lt;p&gt;So, let’s get started by defining a function for the population dynamics model. I’m going to use a Schaefer surplus production model &lt;span class=&#34;citation&#34;&gt;(Schaefer 1957)&lt;/span&gt;. I like to define my Schafer models using optimal equilibrium values, known as &lt;span class=&#34;math inline&#34;&gt;\(B_{MSY}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(U_{MSY}\)&lt;/span&gt; in the fisheries literature, as the leading parameters.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(123)
 
 # Create a function to quickly call for generating biomass
@@ -102,6 +102,11 @@ plot( x = 1:popSP$nT, y = popSP$Bt, xlab = &amp;quot;Year&amp;quot;, ylab = &amp
 &lt;p&gt;&lt;img src=&#34;/post/test-Rmd_files/figure-html/unnamed-chunk-1-1.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
 &lt;p&gt;Our figure shows a 2-way trip, which describes how the biomass declines at first (the first way), then comes back up as catch is decreased (the second way). This is an ideal data set for fisheries stock assessment, as there is contrast in the catch and biomass, making it informative about both the scale of the biomass, helping to estimate &lt;span class=&#34;math inline&#34;&gt;\(B_{MSY}\)&lt;/span&gt;, and the productivity of the stock, helping to estimate &lt;span class=&#34;math inline&#34;&gt;\(U_{MSY}\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;The next part of this post will fit a TMB model to the data generated from the above biomass. I ran this same tutorial in a seminar for our lab group at SFU this past fall, so I’ll be copying and pasting the code in from there.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-schaefer1957some&#34;&gt;
+&lt;p&gt;Schaefer, Milner B. 1957. “Some Considerations of Population Dynamics and Economics in Relation to the Management of the Commercial Marine Fisheries.” &lt;em&gt;Journal of the Fisheries Board of Canada&lt;/em&gt; 14 (5). NRC Research Press: 669–81.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

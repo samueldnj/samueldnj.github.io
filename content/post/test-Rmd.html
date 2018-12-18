@@ -2,6 +2,7 @@
 title: "Testing Rmd Support using a Schafer model"
 date: 2018-12-17
 math: true
+bibliography: library.bib
 output: 
   blogdown::html_page:
     self_contained: false
@@ -40,7 +41,7 @@ output:
 
 <p>This is version 3 of my personal website. I’ve revised to a <a href="">Hugo</a> powered <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> generated website for two reasons. First, it’s a static site generator, similar to Jekyll, serving to keep things simple and fast on the server side. Second, I’ve wanted to start blogging more, and I think the Rmarkdown integration with blogdown and Hugo will help smooth this out.</p>
 <p>This post is a test post for using Rmarkdown to build a simple population dynamics model with process error, and generate some data with observation error. Pushing this post to github pages will require working out how <a href = http://www.travis-ci.com>TravisCI</a> works, which I learned from David Selby’s <a href="https://selbydavid.com/2017/06/22/blogdown-travis/">Tea and Stats</a> blog, which is a handy resource.</p>
-<p>So, let’s get started by defining a function for the population dynamics model. I’m going to use a Schaefer surplus production model <span class="citation">[@schaefer1957some]</span>. I like to define my Schafer models using optimal equilibrium values, known as <span class="math inline">\(B_{MSY}\)</span> and <span class="math inline">\(U_{MSY}\)</span> in the fisheries literature, as the leading parameters.</p>
+<p>So, let’s get started by defining a function for the population dynamics model. I’m going to use a Schaefer surplus production model <span class="citation">(Schaefer 1957)</span>. I like to define my Schafer models using optimal equilibrium values, known as <span class="math inline">\(B_{MSY}\)</span> and <span class="math inline">\(U_{MSY}\)</span> in the fisheries literature, as the leading parameters.</p>
 <pre class="r"><code>set.seed(123)
 
 # Create a function to quickly call for generating biomass
@@ -103,3 +104,8 @@ plot( x = 1:popSP$nT, y = popSP$Bt, xlab = &quot;Year&quot;, ylab = &quot;Biomas
 <p><img src="/post/test-Rmd_files/figure-html/unnamed-chunk-1-1.png" /><!-- --></p>
 <p>Our figure shows a 2-way trip, which describes how the biomass declines at first (the first way), then comes back up as catch is decreased (the second way). This is an ideal data set for fisheries stock assessment, as there is contrast in the catch and biomass, making it informative about both the scale of the biomass, helping to estimate <span class="math inline">\(B_{MSY}\)</span>, and the productivity of the stock, helping to estimate <span class="math inline">\(U_{MSY}\)</span>.</p>
 <p>The next part of this post will fit a TMB model to the data generated from the above biomass. I ran this same tutorial in a seminar for our lab group at SFU this past fall, so I’ll be copying and pasting the code in from there.</p>
+<div id="refs" class="references">
+<div id="ref-schaefer1957some">
+<p>Schaefer, Milner B. 1957. “Some Considerations of Population Dynamics and Economics in Relation to the Management of the Commercial Marine Fisheries.” <em>Journal of the Fisheries Board of Canada</em> 14 (5). NRC Research Press: 669–81.</p>
+</div>
+</div>

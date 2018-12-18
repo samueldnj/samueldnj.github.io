@@ -8,7 +8,6 @@ branches:
 
 r_github_packages:
     - rstudio/blogdown
-
 cache:
   packages: yes
   directories:
