@@ -47,6 +47,10 @@ Download a [PDF](http://sdnjohnson.com/files/JohnsonCV.pdf) copy.
 
 ## Technical Skills
 
-- I'm proficient in the R statistical language, Auto-Differentiation Model Builder (ADMB) and Python
+- I am proficient in the R statistical language, Rmarkdown, latex, Auto-Differentiation Model Builder (ADMB), and Template Model Builder (TMB)
+- I have used SQL, Python, and C++
 - I've conducted closed loop simulations in a management strategy evaluation (MSE) framework for simulated and real fishery management systems, including Northern Cod (*Gadus morhua*) in Atlantic Canada, and Sablefish (*Anoplopoma fimbria*) and Herring (*Clupea pallasii*) in Pacific Canada
 - I'm experienced in teaching technical material in both small and large classroom settings
+
+## Publications
+
