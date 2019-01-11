@@ -15,7 +15,7 @@ authors = ["Samuel D N Johnson","Sean P Cox"]
 # 4 = Report
 # 5 = Book
 # 6 = Book section
-publication_types = ["3"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "Canadian Journal of Fisheries and Aquatic Sciences"
@@ -65,7 +65,7 @@ url_source = ""
 # url_custom = [{name = "Custom Link", url = "http://example.org"}]
 
 # Digital Object Identifier (DOI)
-doi = ""
+doi = "10.1139/cjfas-2018-0048"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

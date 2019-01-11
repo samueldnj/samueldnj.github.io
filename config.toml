@@ -336,6 +336,11 @@ enableGitInfo = false
    url = "files/JohnsonCV.pdf"
    weight = 7
 
+# [[menu.main]]
+#    name = "CV"
+#    url = "CV/"
+#    weight = 7
+
 # Search.
 [params.search]
   # Search provider:
