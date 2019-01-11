@@ -1,11 +1,10 @@
 +++
-author_profile = true
 title = "Curriculum Vitae"
-excerpt = "Welcome to my blog!"
 date = 2019-01-10
 +++
 
 Download a [PDF](http://sdnjohnson.com/files/JohnsonCV.pdf) copy.
+
 
 ## Employment
 
@@ -53,4 +52,5 @@ Download a [PDF](http://sdnjohnson.com/files/JohnsonCV.pdf) copy.
 - I'm experienced in teaching technical material in both small and large classroom settings
 
 ## Publications
+
 
