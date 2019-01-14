@@ -195,6 +195,9 @@ fit2 &lt;- optim(  par = c(  logH_1 = log(62.5),
                 method = &quot;Nelder-Mead&quot; )</code></pre>
 <p>The parameters of the two models are given in the following table, and the plots are shown below that. We can see that the largest</p>
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:optFitPlot">Table 1: </span>Optimised parameters, adult height and negativ log-posterior values under both models.
+</caption>
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -225,19 +228,19 @@ fit2 &lt;- optim(  par = c(  logH_1 = log(62.5),
 No Priors
 </td>
 <td style="text-align:right;">
-61.95544
+61.96
 </td>
 <td style="text-align:right;">
-75.80941
+75.81
 </td>
 <td style="text-align:right;">
-0.5652751
+0.57
 </td>
 <td style="text-align:right;">
-0.8499605
+0.85
 </td>
 <td style="text-align:right;">
-103.1117
+102.83
 </td>
 <td style="text-align:right;">
 6.363659
@@ -248,19 +251,19 @@ No Priors
 Priors
 </td>
 <td style="text-align:right;">
-62.26243
+62.26
 </td>
 <td style="text-align:right;">
-76.71395
+76.71
 </td>
 <td style="text-align:right;">
-0.1834961
+0.18
 </td>
 <td style="text-align:right;">
-0.9512142
+0.95
 </td>
 <td style="text-align:right;">
-178.0455
+180.12
 </td>
 <td style="text-align:right;">
 8.692054
@@ -269,12 +272,15 @@ Priors
 </tbody>
 </table>
 <p><img src="/post/baby-growth/baby-growth_files/figure-html/optFitPlot-1.png" /><!-- --></p>
-<p>The model with no priors shows an adult (asymptotic) height of <span class="math inline">\(H_\infty = 103.11\)</span>, meaning that my son is forecast by this model to be a little bit over 1 metre tall. Looking at the graph, we can see that he’s going to reach that height at about 2000 days, or 5.5 years old, influenced by a growth rate parameter of <span class="math inline">\(K = 0.57\)</span>. Given that both my wife and I are taller than this, and we know of no reasons why we would expect him to be under the first percentile for height, I don’t fully believe this model. On the other hand, we have the model with priors predicting my son will reach his adult height of <span class="math inline">\(H_\infty = 178.05\)</span> at about 20 years of age, with a much lower growth rate <span class="math inline">\(K = 0.18\)</span>. Although the second model is guided by subjective prior distributions, I believe it more - not only because it’s almost exactly my height, but also because aside from the value of <span class="math inline">\(K\)</span> the model parameters are very close, and the negative-log-posterior values are also very close.</p>
+<p>The model with no priors shows an adult (asymptotic) height of <span class="math inline">\(H_\infty = 102.83\)</span>, meaning that my son is forecast by this model to be a little bit over 1 metre tall. Looking at the graph, we can see that he’s going to reach that height at about 2000 days, or 5.5 years old, influenced by a growth rate parameter of <span class="math inline">\(K = 0.57\)</span>. Given that both my wife and I are taller than this, and we know of no reasons why we would expect him to be under the first percentile for height, I don’t fully believe this model. On the other hand, we have the model with priors predicting my son will reach his adult height of <span class="math inline">\(H_\infty = 180.12\)</span> at about 20 years of age, with a much lower growth rate <span class="math inline">\(K = 0.18\)</span>. Although the second model is guided by subjective prior distributions, I believe it more - not only because it’s almost exactly my height, but also because aside from the value of <span class="math inline">\(K\)</span> the model parameters are very close, and the negative-log-posterior values are also very close.</p>
 </div>
 </div>
 <div id="conclusion" class="section level1">
 <h1>Conclusion</h1>
 <table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; float: right; margin-left: 10px;">
+<caption>
+<span id="tab:unnamed-chunk-3">Table 2: </span>Data for my son’s health visits.
+</caption>
 <thead>
 <tr>
 <th style="text-align:right;">
@@ -525,6 +531,7 @@ weight
 <p>So, there we go. I fit a von Bertalanffy growth model to height observations from my son’s health appointments over the first year of his life (data to the right). My aim was to (1) see how well human growth data fit the vonB mode, and (2) predict his adult height from observations now. I found that the vonB model fits human growth data very well, at least during the first year of life where a single growth regime is present <span class="citation">(Karlberg 1987)</span>. On the other hand, I found extrapolating beyond the first year problematic, and required subjective prior distributions on leading parameters to achieve a sensible height prediction.</p>
 <p>The high growth rate of infants is likely the reason that the model without priors estimates a high <span class="math inline">\(K\)</span> value, reaching <span class="math inline">\(H_\infty\)</span> sometime during childhood. According to the ICP model, infants have a high but rapidly decreasing growth rate, which is replaced by a lower, more stable, rate in childhood, and another different rate during puberty, before adult height is reached <span class="citation">(Karlberg 1987)</span>. Later stages have a “humpy” growth pattern, where humps correspond to growth spurts during childhood and puberty.</p>
 <p>Further work could be conducted to generate uncertainty in my prediction. I used a penalised likelihood method to estimate the parameters of the vonB model, with prior distributions penalising deviations from the observed height at 1 year old, and deviations from a growth rate that would produce an adult height that was similar to a weighted average of my wife’s and my own heights. Parameter estimates and the forecast are all maximum likelihood estimates (posterior modes), with no uncertainty reported. Confidence intervals could be estimated by using the delta-method, bootstrapping the residuals on each observation, or by running a Markov-Chain Monte-Carlo numerical integration of the posterior to generate full posterior distributions of all parameters and the model.</p>
+<p>That’s all from me. Happy birthday to my son, thanks to my wife for growing him and being an awesome partner, and thanks to you for reading this nerdy Dad rant!</p>
 </div>
 <div id="references" class="section level1 unnumbered">
 <h1>References</h1>

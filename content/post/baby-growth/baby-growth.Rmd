@@ -38,8 +38,8 @@ output:
 ---
 
 ```{r, echo = FALSE, warning = FALSE, include = FALSE}
-install.packages("kableExtra")
-install.packages("dplyr")
+# install.packages("kableExtra")
+# install.packages("dplyr")
 library(kableExtra)
 library(dplyr)
 library(RColorBrewer)
@@ -327,17 +327,17 @@ The parameters of the two models are given in the following table, and the plots
 ```{r optFitPlot, echo = FALSE, warning = FALSE }
 
 # Recover first model pars
-optPars1 <- exp(fit1$par)
+optPars1 <- round(exp(fit1$par),2)
 # Run the vonB function with the new parameters, 
 Hfit1 <- vonB( d = 1:14600, pars = optPars1[1:3])
 # estimate new adult height
-HinfFit1 <- max(Hfit1)
+HinfFit1 <- round(max(Hfit1),2)
 
-optPars2 <- exp(fit2$par)
+optPars2 <- round(exp(fit2$par),2)
 # Run the vonB function with the new parameters, 
 Hfit2 <- vonB( d = 1:14600, pars = optPars2[1:3])
 # estimate new adult height
-HinfFit2 <- max(Hfit2)
+HinfFit2 <- round(max(Hfit2),2)
 
 
 # Make a table of optPars1 and optPars2
@@ -345,7 +345,7 @@ optParsTab <- rbind(c(optPars1,HinfFit1,fit1$value), c(optPars2,HinfFit2,fit2$va
 colnames(optParsTab) <- c("$$H_1$$", "$$H_2$$", "$$K$$", "$$\\sigma$$", "$$H_\\infty$$", "-log(Post)")
 rownames(optParsTab) <- c("No Priors","Priors")
 
-kable(optParsTab) %>%
+kable(optParsTab, caption = "Optimised parameters, adult height and negativ log-posterior values under both models.") %>%
   kable_styling(bootstrap_options = c(  "striped", 
                                         "hover",
                                         "condensed",
@@ -372,7 +372,7 @@ The model with no priors shows an adult (asymptotic) height of $H_\infty = `r ro
 
 ```{r, echo = FALSE, warning = FALSE}
 
-kable( growthData ) %>%
+kable( growthData, caption = "Data for my son's health visits." ) %>%
   kable_styling(bootstrap_options = c(  "striped", 
                                         "hover",
                                         "condensed",
@@ -386,6 +386,8 @@ So, there we go. I fit a von Bertalanffy growth model to height observations fro
 The high growth rate of infants is likely the reason that the model without priors estimates a high $K$ value, reaching $H_\infty$ sometime during childhood. According to the ICP model, infants have a high but rapidly decreasing growth rate, which is replaced by a lower, more stable, rate in childhood, and another different rate during puberty, before adult height is reached [@karlberg1987modelling]. Later stages have a "humpy" growth pattern, where humps correspond to growth spurts during childhood and puberty.
 
 Further work could be conducted to generate uncertainty in my prediction. I used a penalised likelihood method to estimate the parameters of the vonB model, with prior distributions penalising deviations from the observed height at 1 year old, and deviations from a growth rate that would produce an adult height that was similar to a weighted average of my wife's and my own heights. Parameter estimates and the forecast are all maximum likelihood estimates (posterior modes), with no uncertainty reported. Confidence intervals could be estimated by using the delta-method, bootstrapping the residuals on each observation, or by running a Markov-Chain Monte-Carlo numerical integration of the posterior to generate full posterior distributions of all parameters and the model.
+
+That's all from me. Happy birthday to my son, thanks to my wife for growing him and being an awesome partner, and thanks to you for reading this nerdy Dad rant!
 
 
 # References

@@ -175,6 +175,9 @@ fit2 &amp;lt;- optim(  par = c(  logH_1 = log(62.5),
                 method = &amp;quot;Nelder-Mead&amp;quot; )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The parameters of the two models are given in the following table, and the plots are shown below that. We can see that the largest&lt;/p&gt;
 &lt;table class=&#34;table table-striped table-hover table-condensed table-responsive&#34; style=&#34;width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;caption&gt;
+&lt;span id=&#34;tab:optFitPlot&#34;&gt;Table 1: &lt;/span&gt;Optimised parameters, adult height and negativ log-posterior values under both models.
+&lt;/caption&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:left;&#34;&gt;
@@ -205,19 +208,19 @@ fit2 &amp;lt;- optim(  par = c(  logH_1 = log(62.5),
 No Priors
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-61.95544
+61.96
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-75.80941
+75.81
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-0.5652751
+0.57
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-0.8499605
+0.85
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-103.1117
+102.83
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
 6.363659
@@ -228,19 +231,19 @@ No Priors
 Priors
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-62.26243
+62.26
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-76.71395
+76.71
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-0.1834961
+0.18
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-0.9512142
+0.95
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
-178.0455
+180.12
 &lt;/td&gt;
 &lt;td style=&#34;text-align:right;&#34;&gt;
 8.692054
@@ -249,12 +252,15 @@ Priors
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;img src=&#34;/post/baby-growth/baby-growth_files/figure-html/optFitPlot-1.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
-&lt;p&gt;The model with no priors shows an adult (asymptotic) height of &lt;span class=&#34;math inline&#34;&gt;\(H_\infty = 103.11\)&lt;/span&gt;, meaning that my son is forecast by this model to be a little bit over 1 metre tall. Looking at the graph, we can see that he’s going to reach that height at about 2000 days, or 5.5 years old, influenced by a growth rate parameter of &lt;span class=&#34;math inline&#34;&gt;\(K = 0.57\)&lt;/span&gt;. Given that both my wife and I are taller than this, and we know of no reasons why we would expect him to be under the first percentile for height, I don’t fully believe this model. On the other hand, we have the model with priors predicting my son will reach his adult height of &lt;span class=&#34;math inline&#34;&gt;\(H_\infty = 178.05\)&lt;/span&gt; at about 20 years of age, with a much lower growth rate &lt;span class=&#34;math inline&#34;&gt;\(K = 0.18\)&lt;/span&gt;. Although the second model is guided by subjective prior distributions, I believe it more - not only because it’s almost exactly my height, but also because aside from the value of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; the model parameters are very close, and the negative-log-posterior values are also very close.&lt;/p&gt;
+&lt;p&gt;The model with no priors shows an adult (asymptotic) height of &lt;span class=&#34;math inline&#34;&gt;\(H_\infty = 102.83\)&lt;/span&gt;, meaning that my son is forecast by this model to be a little bit over 1 metre tall. Looking at the graph, we can see that he’s going to reach that height at about 2000 days, or 5.5 years old, influenced by a growth rate parameter of &lt;span class=&#34;math inline&#34;&gt;\(K = 0.57\)&lt;/span&gt;. Given that both my wife and I are taller than this, and we know of no reasons why we would expect him to be under the first percentile for height, I don’t fully believe this model. On the other hand, we have the model with priors predicting my son will reach his adult height of &lt;span class=&#34;math inline&#34;&gt;\(H_\infty = 180.12\)&lt;/span&gt; at about 20 years of age, with a much lower growth rate &lt;span class=&#34;math inline&#34;&gt;\(K = 0.18\)&lt;/span&gt;. Although the second model is guided by subjective prior distributions, I believe it more - not only because it’s almost exactly my height, but also because aside from the value of &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; the model parameters are very close, and the negative-log-posterior values are also very close.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;conclusion&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;table class=&#34;table table-striped table-hover table-condensed table-responsive&#34; style=&#34;width: auto !important; float: right; margin-left: 10px;&#34;&gt;
+&lt;caption&gt;
+&lt;span id=&#34;tab:unnamed-chunk-3&#34;&gt;Table 2: &lt;/span&gt;Data for my son’s health visits.
+&lt;/caption&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:right;&#34;&gt;
@@ -505,6 +511,7 @@ weight
 &lt;p&gt;So, there we go. I fit a von Bertalanffy growth model to height observations from my son’s health appointments over the first year of his life (data to the right). My aim was to (1) see how well human growth data fit the vonB mode, and (2) predict his adult height from observations now. I found that the vonB model fits human growth data very well, at least during the first year of life where a single growth regime is present &lt;span class=&#34;citation&#34;&gt;(Karlberg 1987)&lt;/span&gt;. On the other hand, I found extrapolating beyond the first year problematic, and required subjective prior distributions on leading parameters to achieve a sensible height prediction.&lt;/p&gt;
 &lt;p&gt;The high growth rate of infants is likely the reason that the model without priors estimates a high &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; value, reaching &lt;span class=&#34;math inline&#34;&gt;\(H_\infty\)&lt;/span&gt; sometime during childhood. According to the ICP model, infants have a high but rapidly decreasing growth rate, which is replaced by a lower, more stable, rate in childhood, and another different rate during puberty, before adult height is reached &lt;span class=&#34;citation&#34;&gt;(Karlberg 1987)&lt;/span&gt;. Later stages have a “humpy” growth pattern, where humps correspond to growth spurts during childhood and puberty.&lt;/p&gt;
 &lt;p&gt;Further work could be conducted to generate uncertainty in my prediction. I used a penalised likelihood method to estimate the parameters of the vonB model, with prior distributions penalising deviations from the observed height at 1 year old, and deviations from a growth rate that would produce an adult height that was similar to a weighted average of my wife’s and my own heights. Parameter estimates and the forecast are all maximum likelihood estimates (posterior modes), with no uncertainty reported. Confidence intervals could be estimated by using the delta-method, bootstrapping the residuals on each observation, or by running a Markov-Chain Monte-Carlo numerical integration of the posterior to generate full posterior distributions of all parameters and the model.&lt;/p&gt;
+&lt;p&gt;That’s all from me. Happy birthday to my son, thanks to my wife for growing him and being an awesome partner, and thanks to you for reading this nerdy Dad rant!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;references&#34; class=&#34;section level1 unnumbered&#34;&gt;
 &lt;h1&gt;References&lt;/h1&gt;
@@ -678,7 +685,7 @@ weight
 
 &lt;p&gt;This is version 3 of my personal website. I’ve revised to a &lt;a href=&#34;&#34;&gt;Hugo&lt;/a&gt; powered &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt; generated website for two reasons. First, it’s a static site generator, similar to Jekyll, serving to keep things simple and fast on the server side. Second, I’ve wanted to start blogging more, and I think the Rmarkdown integration with blogdown and Hugo will help smooth this out.&lt;/p&gt;
 &lt;p&gt;This post is a test post for using Rmarkdown to build a simple population dynamics model with process error, and generate some data with observation error. Pushing this post to github pages will require working out how &lt;a href = http://www.travis-ci.com&gt;TravisCI&lt;/a&gt; works, which I learned from David Selby’s &lt;a href=&#34;https://selbydavid.com/2017/06/22/blogdown-travis/&#34;&gt;Tea and Stats&lt;/a&gt; blog - a handy resource.&lt;/p&gt;
-&lt;p&gt;So, let’s get started by defining a function for the population dynamics model. I’m going to use a Schaefer surplus production model &lt;span class=&#34;citation&#34;&gt;(Schaefer 1957)&lt;/span&gt;.I like to define my Schafer models using optimal equilibrium values, known as &lt;span class=&#34;math inline&#34;&gt;\(B_{MSY}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(U_{MSY}\)&lt;/span&gt; in the fisheries literature, as the leading parameters.&lt;/p&gt;
+&lt;p&gt;So, let’s get started by defining a function for the population dynamics model. I’m going to use a Schaefer surplus production model &lt;span class=&#34;citation&#34;&gt;(Schaefer 1957)&lt;/span&gt;. I like to define my Schafer models using optimal equilibrium values, known as &lt;span class=&#34;math inline&#34;&gt;\(B_{MSY}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(U_{MSY}\)&lt;/span&gt; in the fisheries literature, as the leading parameters.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(123)
 
 # Create a function to quickly call for generating biomass
