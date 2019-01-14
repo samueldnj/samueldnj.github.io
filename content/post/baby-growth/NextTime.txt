@@ -1,0 +1,36 @@
+To see if the priors are having a strong effect, we can relax them a little by increasing their prior standard deviations. I've done this for `fit2` below.
+
+```{r optimGrowthHighH2, warning = FALSE}
+
+fit2 <- optim(  par = c(  logH_1 = log(62.5), 
+                          logH_2 = log(74.5), 
+                          logK = log(0.16),
+                          logsigma = -1),
+                fn = vonB_negLogPost,
+                D = c(100,365), data = growthData,
+                H2Prior = c(74.5, 74.5),
+                KPrior = c(.16,.16) )
+
+optPars2 <- exp(fit2$par)
+# Run the vonB function with the new parameters, 
+Hfit2 <- vonB( d = 1:14600, pars = optPars2[1:3])
+# estimate new adult height
+HinfFit2 <- max(Hfit2)
+
+fit2
+
+```
+
+As expected, the lack of data at older ages is producing absurd parameter estimates. While $H_1 = `r round(optPars2[1],2)`$ and $H_2 = `r round(optPars2[2],2)`$ are sensible, the estimates $K =  `r round(optPars2[3],2)`$ and $H_{\infty} = `r round(HinfFit2,2)`$ are not!
+
+```{r optFitPlot2, echo = FALSE, warning = FALSE }
+
+plot( x = 1:7300, y = Hfit2[1:7300], type = "l", las = 1,
+      xlab = "Age (days)", ylab = "Height (cm)",
+      col = "red", ylim = c(0,200),
+      main = "Optimised model with short D1, D2 interval" )
+  points( growthData$j, growthData$height, pch = 16,
+          col = "grey40", cex = .7 )
+  abline( h = HinfFit2, lty = 3)
+
+```

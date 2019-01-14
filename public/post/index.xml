@@ -13,21 +13,31 @@
     
     
     <item>
+      <title>Estimating a von Bertalanffy growth model from height measurements of my son during his first year of life</title>
+      <link>/post/baby-growth/baby-growth/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/baby-growth/baby-growth/</guid>
+      <description>We made it a whole year! Our son just turned 1 year old!! We made it through the first year, with all its trials, twists and turns. We’re all happier, older, more full of love, and I hope a little bit wiser.
+To celebrate, I’m going to prove how much of a nerdy PhDad I am. I’m going to spend my saturday night fitting growth models to his height and weight observations we took at the various doctors’ appointments last year, instead of working on my thesis or a talk I’m giving next week.</description>
+    </item>
+    
+    <item>
       <title>Testing Rmd Support using a Schafer model</title>
-      <link>/post/test-rmd/</link>
+      <link>/post/test-rmd/test-rmd/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/test-rmd/</guid>
+      <guid>/post/test-rmd/test-rmd/</guid>
       <description>This is version 3 of my personal website. I’ve revised to a Hugo powered blogdown generated website for two reasons. First, it’s a static site generator, similar to Jekyll, serving to keep things simple and fast on the server side. Second, I’ve wanted to start blogging more, and I think the Rmarkdown integration with blogdown and Hugo will help smooth this out.
 This post is a test post for using Rmarkdown to build a simple population dynamics model with process error, and generate some data with observation error.</description>
     </item>
     
     <item>
       <title>Welcome!</title>
-      <link>/post/first-post/</link>
+      <link>/post/first-post/first-post/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 -0800</pubDate>
       
-      <guid>/post/first-post/</guid>
+      <guid>/post/first-post/first-post/</guid>
       <description>First Post! Welcome to my blog! I plan to use this blog for two main purposes. The first is as an academic learning resource, where I will write posts that go through new concepts that I&amp;rsquo;m interested in learning about. The second is to develop new research ideas, with a view to refining them into primary publications.
 Most posts will have something to do with Fisheries Science, the field I&amp;rsquo;m actively involved in.</description>
     </item>
