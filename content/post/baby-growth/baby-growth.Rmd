@@ -39,6 +39,7 @@ output:
 
 ```{r, echo = FALSE, warning = FALSE, include = FALSE}
 install.packages("kableExtra")
+install.packages("dplyr")
 library(kableExtra)
 library(dplyr)
 library(RColorBrewer)
