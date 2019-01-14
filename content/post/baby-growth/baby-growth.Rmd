@@ -38,6 +38,7 @@ output:
 ---
 
 ```{r, echo = FALSE, warning = FALSE, include = FALSE}
+install.packages("kableExtra")
 library(kableExtra)
 library(dplyr)
 library(RColorBrewer)
@@ -386,6 +387,7 @@ The high growth rate of infants is likely the reason that the model without prio
 Further work could be conducted to generate uncertainty in my prediction. I used a penalised likelihood method to estimate the parameters of the vonB model, with prior distributions penalising deviations from the observed height at 1 year old, and deviations from a growth rate that would produce an adult height that was similar to a weighted average of my wife's and my own heights. Parameter estimates and the forecast are all maximum likelihood estimates (posterior modes), with no uncertainty reported. Confidence intervals could be estimated by using the delta-method, bootstrapping the residuals on each observation, or by running a Markov-Chain Monte-Carlo numerical integration of the posterior to generate full posterior distributions of all parameters and the model.
 
 
+# References
 
 
 
