@@ -11,6 +11,30 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>The effects of posterior sampling design on management procedure performance in MSE</title>
+      <link>/talk/safs_qseminar_jan2019/safs_qseminar_jan2019/</link>
+      <pubDate>Fri, 25 Jan 2019 12:30:00 -0800</pubDate>
+      
+      <guid>/talk/safs_qseminar_jan2019/safs_qseminar_jan2019/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;em&gt;Slides&lt;/em&gt; feature and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Estimating a von Bertalanffy growth model from height measurements of my son during his first year of life</title>
       <link>/post/baby-growth/baby-growth/</link>
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
@@ -541,10 +565,10 @@ weight
     
     <item>
       <title>Curriculum Vitae</title>
-      <link>/cv/</link>
+      <link>/cv/cv/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 -0800</pubDate>
       
-      <guid>/cv/</guid>
+      <guid>/cv/cv/</guid>
       <description>
 
 &lt;p&gt;Download a &lt;a href=&#34;http://sdnjohnson.com/files/JohnsonCV.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; copy.&lt;/p&gt;
@@ -595,64 +619,6 @@ weight
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Curriculum Vitae</title>
-      <link>/cv2/</link>
-      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/cv2/</guid>
-      <description>
-
-&lt;hr /&gt;
-
-&lt;p&gt;Download a &lt;a href=&#34;http://sdnjohnson.com/files/JohnsonCV.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; copy.&lt;/p&gt;
-
-&lt;h2 id=&#34;employment&#34;&gt;Employment&lt;/h2&gt;
-
-&lt;dl&gt;
-&lt;dt&gt;2016 - Present: &lt;strong&gt;Sub-contracting Consultant&lt;/strong&gt;&lt;/dt&gt;
-&lt;dd&gt;Landmark Fisheries Research (Port Moody, BC)&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Supervisors:&lt;/em&gt; Ashleen Benson, Sean Cox&lt;/dd&gt;
-&lt;dt&gt;2016 - Present: &lt;strong&gt;MITACS Accelerate Intern&lt;/strong&gt;&lt;/dt&gt;
-&lt;dd&gt;Wild Canadian Sablefish (Steveston, BC)&lt;/dd&gt;
-&lt;dd&gt;Pacific Halibut Management Association (Vancouver, BC)&lt;/dd&gt;
-&lt;dd&gt;Canadian Groundfish Research and Conservation Society (New Westminster, BC)&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Supervisors:&lt;/em&gt; Sean Cox, Chris Acheson, Chris Sporer, Bruce Turris&lt;/dd&gt;
-&lt;dt&gt;2015 - 2016: &lt;strong&gt;MITACS Accelerate Intern&lt;/strong&gt;&lt;/dt&gt;
-&lt;dd&gt;Wild Canadian Sablefish (Steveston, BC)&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Supervisors:&lt;/em&gt; Sean Cox, Chris Acheson&lt;/dd&gt;
-&lt;dt&gt;2012 - 2014: &lt;strong&gt;Research Assistant&lt;/strong&gt;&lt;/dt&gt;
-&lt;dd&gt;Department of Mathematics, Simon Fraser University (Burnaby, BC)&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Supervisor:&lt;/em&gt; Marni Mishna&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
-
-&lt;dl&gt;
-&lt;dt&gt;2014 - 2019 (Expected) &lt;em&gt;PhD, Resource and Environmental Management&lt;/em&gt;&lt;/dt&gt;
-&lt;dd&gt;Simon Fraser University (Burnaby, BC)&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Advisor:&lt;/em&gt; Associate Professor Sean Cox&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Thesis title:&lt;/em&gt; Multispecies Management Tools for Multi Sector Fisheries&lt;/dd&gt;
-&lt;dt&gt;2010 - 2012: &lt;em&gt;MSc, Mathematics&lt;/em&gt;&lt;/dt&gt;
-&lt;dd&gt;Simon Fraser University (Burnaby, BC)&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Advisor:&lt;/em&gt; Associate Professor Marni Mishna&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Thesis title:&lt;/em&gt; &lt;a href=&#34;http://arxiv.org/pdf/1304.6432.pdf&#34; target=&#34;_blank&#34;&gt;Analytic Combinatorics of Planar Lattice Paths&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;2005-2009: &lt;em&gt;B. Mathematics (Hons)&lt;/em&gt;&lt;/dt&gt;
-&lt;dd&gt;University of Newcastle (Newcastle, NSW)&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Honours Advisor:&lt;/em&gt; Associate Professor George Willis&lt;/dd&gt;
-&lt;dd&gt;&lt;em&gt;Honours Thesis Title:&lt;/em&gt; Simple Groups of Automorphisms of Locally Finite Trees&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h2 id=&#34;technical-skills&#34;&gt;Technical Skills&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I&amp;rsquo;m proficient in the R statistical language, Auto-Differentiation Model Builder (ADMB) and Python&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;ve conducted closed loop simulations in a management strategy evaluation (MSE) framework for simulated and real fishery management systems, including Northern Cod (&lt;em&gt;Gadus morhua&lt;/em&gt;) in Atlantic Canada, and Sablefish (&lt;em&gt;Anoplopoma fimbria&lt;/em&gt;) and Herring (&lt;em&gt;Clupea pallasii&lt;/em&gt;) in Pacific Canada&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;m experienced in teaching technical material in both small and large classroom settings&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

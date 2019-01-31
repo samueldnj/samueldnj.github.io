@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/talk/safs_qseminar_jan2019/safs_qseminar_jan2019/</loc>
+      <lastmod>2019-01-25T12:30:00-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/baby-growth/baby-growth/</loc>
       <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     </url>
@@ -12,16 +20,8 @@
     
     <url>
     
-      <loc>/cv/</loc>
+      <loc>/cv/cv/</loc>
       <lastmod>2019-01-10T00:00:00-08:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/cv2/</loc>
-      <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -109,6 +109,33 @@
     
     <url>
     
+      <loc>/cv/</loc>
+      <lastmod>2019-01-10T00:00:00-08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/mse/</loc>
+      <lastmod>2019-01-25T12:30:00-08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/management/</loc>
+      <lastmod>2019-01-25T12:30:00-08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/publication_types/</loc>
       <lastmod>2018-12-16T21:50:34-08:00</lastmod>
       <priority>0</priority>
@@ -127,7 +154,17 @@
     
     <url>
     
+      <loc>/tags/simulation/</loc>
+      <lastmod>2019-01-25T12:30:00-08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/</loc>
+      <lastmod>2019-01-25T12:30:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
