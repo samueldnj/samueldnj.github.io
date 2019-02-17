@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cvs on Samuel D N Johnson</title>
+    <link>http://sdnjohnson.com/cv/</link>
+    <description>Recent content in Cvs on Samuel D N Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sdnjohnson.com/cv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>http://sdnjohnson.com/cv/cv/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://sdnjohnson.com/cv/cv/</guid>
+      <description>Download a PDF copy.
+Employment  2016 - Present: Sub-contracting Consultant Landmark Fisheries Research (Port Moody, BC) Supervisors: Ashleen Benson, Sean Cox 2016 - Present: MITACS Accelerate Intern Wild Canadian Sablefish (Steveston, BC) Pacific Halibut Management Association (Vancouver, BC) Canadian Groundfish Research and Conservation Society (New Westminster, BC) Supervisors: Sean Cox, Chris Acheson, Chris Sporer, Bruce Turris 2015 - 2016: MITACS Accelerate Intern Wild Canadian Sablefish (Steveston, BC) Supervisors: Sean Cox, Chris Acheson 2012 - 2014: Research Assistant Department of Mathematics, Simon Fraser University (Burnaby, BC) Supervisor: Marni Mishna  Education  2014 - 2019 (Expected) PhD, Resource and Environmental Management Simon Fraser University (Burnaby, BC) Advisor: Associate Professor Sean Cox Thesis title: Multispecies Management Tools for Multi Sector Fisheries 2010 - 2012: MSc, Mathematics Simon Fraser University (Burnaby, BC) Advisor: Associate Professor Marni Mishna Thesis title: Analytic Combinatorics of Planar Lattice Paths 2005-2009: B.</description>
+    </item>
+    
+  </channel>
+</rss>

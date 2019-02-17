@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Samuel D N Johnson</title>
+    <link>http://sdnjohnson.com/publication/</link>
+    <description>Recent content in Publications on Samuel D N Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sdnjohnson.com/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A combinatorial understanding of lattice path asymptotics.</title>
+      <link>http://sdnjohnson.com/publication/latticepathasymptotics/</link>
+      <pubDate>Sun, 16 Dec 2018 21:50:34 -0800</pubDate>
+      
+      <guid>http://sdnjohnson.com/publication/latticepathasymptotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using autonomous video to estimate the bottom-contact area of longline trap gear and presence–absence of sensitive benthic habitat</title>
+      <link>http://sdnjohnson.com/publication/bottomcontact/</link>
+      <pubDate>Sun, 16 Dec 2018 21:50:24 -0800</pubDate>
+      
+      <guid>http://sdnjohnson.com/publication/bottomcontact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating the role of data quality when sharing information in hierarchical multi-stock assessment models, with an application to Dover Sole.</title>
+      <link>http://sdnjohnson.com/publication/hierprod/</link>
+      <pubDate>Thu, 18 Oct 2018 21:46:24 -0800</pubDate>
+      
+      <guid>http://sdnjohnson.com/publication/hierprod/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

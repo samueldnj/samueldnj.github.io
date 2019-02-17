@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.53" />
+  <meta name="author" content="Samuel Johnson">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="We made it a whole year! Our son just turned 1 year old!! We made it through the first year, with all its trials, twists and turns. We’re all happier, older, more full of love, and I hope a little bit wiser.
+To celebrate, I’m going to prove how much of a nerdy PhDad I am. I’m going to spend my saturday night fitting growth models to his height and weight observations we took at the various doctors’ appointments last year, instead of working on my thesis or a talk I’m giving next week.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://sdnjohnson.com/post/baby-growth/baby-growth/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="http://sdnjohnson.com/index.xml" type="application/rss+xml" title="Samuel D N Johnson">
+  <link rel="feed" href="http://sdnjohnson.com/index.xml" type="application/rss+xml" title="Samuel D N Johnson">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://sdnjohnson.com/post/baby-growth/baby-growth/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@sdnjohnson">
+  <meta property="twitter:creator" content="@sdnjohnson">
+  
+  <meta property="og:site_name" content="Samuel D N Johnson">
+  <meta property="og:url" content="http://sdnjohnson.com/post/baby-growth/baby-growth/">
+  <meta property="og:title" content="Estimating a von Bertalanffy growth model from height measurements of my son during his first year of life | Samuel D N Johnson">
+  <meta property="og:description" content="We made it a whole year! Our son just turned 1 year old!! We made it through the first year, with all its trials, twists and turns. We’re all happier, older, more full of love, and I hope a little bit wiser.
+To celebrate, I’m going to prove how much of a nerdy PhDad I am. I’m going to spend my saturday night fitting growth models to his height and weight observations we took at the various doctors’ appointments last year, instead of working on my thesis or a talk I’m giving next week."><meta property="og:image" content="http://sdnjohnson.com/img/bio-pic.jpg">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-01-12T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-01-12T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Estimating a von Bertalanffy growth model from height measurements of my son during his first year of life | Samuel D N Johnson</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Samuel D N Johnson</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#talks">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/cv/cv">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Estimating a von Bertalanffy growth model from height measurements of my son during his first year of life</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Samuel Johnson">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-01-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-01-12 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Jan 12, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Samuel Johnson">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    12 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/baby-growth/baby-growth/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Estimating%20a%20von%20Bertalanffy%20growth%20model%20from%20height%20measurements%20of%20my%20son%20during%20his%20first%20year%20of%20life&amp;url=http%3a%2f%2fsdnjohnson.com%2fpost%2fbaby-growth%2fbaby-growth%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fsdnjohnson.com%2fpost%2fbaby-growth%2fbaby-growth%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fsdnjohnson.com%2fpost%2fbaby-growth%2fbaby-growth%2f&amp;title=Estimating%20a%20von%20Bertalanffy%20growth%20model%20from%20height%20measurements%20of%20my%20son%20during%20his%20first%20year%20of%20life"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fsdnjohnson.com%2fpost%2fbaby-growth%2fbaby-growth%2f&amp;title=Estimating%20a%20von%20Bertalanffy%20growth%20model%20from%20height%20measurements%20of%20my%20son%20during%20his%20first%20year%20of%20life"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Estimating%20a%20von%20Bertalanffy%20growth%20model%20from%20height%20measurements%20of%20my%20son%20during%20his%20first%20year%20of%20life&amp;body=http%3a%2f%2fsdnjohnson.com%2fpost%2fbaby-growth%2fbaby-growth%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<div id="we-made-it-a-whole-year" class="section level1">
+<h1>We made it a whole year!</h1>
+<p>Our son just turned 1 year old!! We made it through the first year, with all its trials, twists and turns. We’re all happier, older, more full of love, and I hope a little bit wiser.</p>
+<p>To celebrate, I’m going to prove how much of a nerdy PhDad I am. I’m going to spend my saturday night fitting growth models to his height and weight observations we took at the various doctors’ appointments last year, instead of working on my thesis or a talk I’m giving next week.</p>
+<p>Really, I’m interested in 2 things: (1) trying to fit the data with a model, and (2) trying to predict my son’s adult height. <em>I’m envisioning this as a series of blog posts that I update with new data points</em>. Ideally, I would be able to update my model fit as time goes on, and if this website persists long enough, I would be able to (in)validate my model with the true observations in about 18-22 years. Hah!</p>
+</div>
+<div id="data" class="section level1">
+<h1>Data</h1>
+<p>First, we need the data. I used a handy phone app to record heights and weights whenever they were observed at the various appointments. These data have been collected into the table at the bottom of this post. This shows the observations of height and weight (if the were taken) on julian day <span class="math inline">\(j\)</span> since his birthday (<span class="math inline">\(j = 1\)</span>).</p>
+<p>We can visualise the data on a multi-panel plot, and fit a smoother to each quantity to take a look at the average behaviour. I’ve done this below. Notice that we have a lot more weight observations than height observations in the first four months. All I can say about that is breastfeeding is <strong>HARD</strong>, and my wife is a <strong><em>rockstar</em></strong>. The other thing you might notice is that this data follows a fairly steady trend. The deviations in the height plots are likely observation errors (height data for infants is noisy). On the other hand, the deviations for weight observations are likely process variation, as doctors’ offices have fairly accurate scales that take an average weight over a time period; this variation can be explained by changes in my son’s diet and the occasional growth spurt.</p>
+<p><img src="/post/baby-growth/baby-growth_files/figure-html/unnamed-chunk-2-1.png" /><!-- --></p>
+</div>
+<div id="modeling-human-growth" class="section level1">
+<h1>Modeling human growth</h1>
+<p>There are several papers on modeling human growth in the medical literature that I just turned up in a quick google scholar search. Most are based on the Infancy-Childhood-Puberty (ICP) model <span class="citation">(Karlberg 1987)</span>, which seems to have been the standard for most of the last 30 years. Recently, an updated approach was derived based on phenomenological universalities <span class="citation">(Gliozzi et al. 2012)</span>, but to my untrained eye this model overlaps a lot with the ICP model.</p>
+<p>I’m going to use a different model, though. You might have guessed it, given that I’m a fisheries student, but I’m going to use a von Bertalanffy model, which I will refer to as the vonB model for short. This is because neither of the above models from the medical literature satisfy both of my requirements for this post. They’ll certainly fit to my son’s data (who knows how well - maybe another post) but they won’t predict adult height from infant observations given that they switch model structures for different life stages, so I’m going to pass on them.</p>
+<div id="defining-the-model" class="section level2">
+<h2>Defining the model</h2>
+<p>I’m going to use the form of the vonB model that de-correlates the asymptotic (adult) length <span class="math inline">\(L_{\infty}\)</span> from the growth ‘rate’<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> <span class="math inline">\(K\)</span> <span class="citation">(Schnute 1981; Francis 2016)</span>:
+<span class="math display">\[
+L_a = L_1 + (L_2 - L_1) \cdot \frac{e^{-K A_1} - e^{-K a}}{e^{-K A_1} - e^{-K A_2}}.
+\]</span>
+Here, <span class="math inline">\(L_a\)</span> is the length at age <span class="math inline">\(a\)</span>, in years, <span class="math inline">\(K\)</span> is the rate of change in length per unit time, and <span class="math inline">\(L_1\)</span> and <span class="math inline">\(L_2\)</span> are the lengths at ages <span class="math inline">\(A_1\)</span> and <span class="math inline">\(A_2\)</span>, ages that are chosen to be representative of early and late stage lengths, respectively.</p>
+<p>I’m going to have to modify this model a little bit to use the data I have. First, humans stand up, so I’m modeling height <span class="math inline">\(H\)</span>, not growth <span class="math inline">\(L\)</span> - a completely aesthetic changes of variables. Second, I have observations with time-steps in days, not years, so I’m going to have to use a different rate <span class="math inline">\(K&#39; = K/365\)</span>, making the formula
+<span class="math display">\[
+H_d = H_1 + (H_2 - H_1) \cdot \frac{e^{-K&#39; D_1} - e^{-K&#39; d}}{e^{-K&#39; D_1} - e^{-K&#39; D_2}},
+\]</span>
+where <span class="math inline">\(D_1\)</span> and <span class="math inline">\(D_2\)</span> are ages in days for <span class="math inline">\(H_1\)</span> and <span class="math inline">\(H_2\)</span>, respectively.</p>
+<p>I should be able to estimate this model from the data, but I foresee at least one challenge. This is a three parameter model (<span class="math inline">\(L_1\)</span>, <span class="math inline">\(L_2\)</span>, and <span class="math inline">\(K\)</span>). I <em>technically</em> have enough data to estimate three parameters, but I don’t have any data that represents the late stage height <span class="math inline">\(H_2\)</span> (we’ve got some time to wait for that). I’m going to attempt extrapolating out to 18 years, by setting <span class="math inline">\(D_2 = 365\)</span> to see what it does, and encouraging the model to 20 years by setting a prior distribution on the <span class="math inline">\(K\)</span> parameter, with a mean value intended to produce something close to a heuristic prediction of adult height. My wife is 158 cm, and I am 178cm, so our son’s predicted maximum height according to <a href="https://www.mayoclinic.org/healthy-lifestyle/childrens-health/expert-answers/child-growth/faq-20057990">this Mayo Clinic method</a> is
+<span class="math display">\[
+\mu_{H_\infty} = \frac{158 + 178 + 13}{2} = 174.5 \mbox{cm}.
+\]</span></p>
+</div>
+</div>
+<div id="implementing-the-vonb-model-r" class="section level1">
+<h1>Implementing the vonB model R</h1>
+<p>So, let’s get into the knitty-gritty. We’re going to optimise later, so I’m going to define a <code>vonB()</code> function, which takes the number of days <span class="math inline">\(d\)</span> and the model parameters defined above as arguemnts. I’m going to set function default argument values based on the observations, with <span class="math inline">\(D_1 = 100\)</span>, <span class="math inline">\(D_2 = 365\)</span>, and assume a yearly <span class="math inline">\(K = 0.25\)</span> for now.</p>
+<pre class="r"><code># First, create a function to calculate the 
+# height at a given day d. Leading parameters 
+# H_1, H_2 and K are separated from D values 
+# as pars are estimated model parameters passed
+# in from the log-likelihood function
+vonB &lt;- function( d = 1, 
+                  pars = c( H_1 = 62.5, 
+                            H_2 = 74.5, 
+                            K = 0.25 ), 
+                  D = c(100,365) )
+{
+  # Recover pars
+  H_1 &lt;- pars[1]
+  H_2 &lt;- pars[2]
+  K   &lt;- pars[3]/365
+
+  # Recover D values
+  D_1 &lt;- D[1]
+  D_2 &lt;- D[2]
+  
+  # Run calculation
+  H_d &lt;- H_1 + (H_2 - H_1) * (exp(-K*D_1) - exp(-K*d)) /( exp(-K*D_1) - exp(-K*D_2) )
+
+  # Return H_d
+  return(H_d)
+}</code></pre>
+<div id="fitting-by-eye" class="section level2">
+<h2>Fitting by eye</h2>
+<p>If I run the model with the default values, we can see that it fits the data we have pretty well by eye. The only caveat is that the asymptotic height is 134.79cm, which is low based on my heuristic estimate of 174.5cm above. This is likely because my randomly chosen initial <span class="math inline">\(K\)</span> value is too high, leading the growth to saturate at a lower asymptotic height.</p>
+<p><img src="/post/baby-growth/baby-growth_files/figure-html/defaultFit-1.png" /><!-- --></p>
+<p>Thanks to my functional workflow, it’s easy to change values and produce more growth curves.</p>
+<pre class="r"><code>H2 &lt;- vonB( d = 1:14600, pars = c(  H_1 = 62.5, 
+                                    H_2 = 74.5, 
+                                    K = 0.16 )  )
+Hinf2 &lt;- max(H2)</code></pre>
+<p>After some fiddling around, I can get a better asymptotic height from <span class="math inline">\(K = 0.16\)</span>, which produces an asymptotic height of 171.73cm. I’ve plotted this new curve and the previous model on the axes below.</p>
+<p><img src="/post/baby-growth/baby-growth_files/figure-html/handFitPlot-1.png" /><!-- --></p>
+</div>
+<div id="optimisation" class="section level2">
+<h2>Optimisation</h2>
+<p>Let’s optimise! First, we need a negative log-posterior density function, which we’re going to use in an <code>optim()</code> call. We’ll run the optimisation with the default values, which is a short interval between <span class="math inline">\(D_1 = 100\)</span> and <span class="math inline">\(D_2 = 365\)</span>. I’m going to add three prior distributions to penalise deviations from (1) the last observed height of 74.5cm at 1 year old, (2) the <span class="math inline">\(K = 0.16\)</span> growth rate that I eye-balled to give an adult height similar to the heuristic from the Mayo Clinic, and (3) an improper Jeffreys prior on the observation error <span class="math inline">\(\sigma\)</span>.</p>
+<p>Assuming the residuals between the model and the data are normally distributed, we have the likelihood function
+<span class="math display">\[
+\mathcal{L} = \prod_{i} \frac{1}{2\sqrt{\pi\sigma^2}} e^{-\frac{(H_d - \hat{H}_d)^2}{2\sigma^2}}.
+\]</span>
+This is implemented in the following code chunk, along with the priors on <span class="math inline">\(H_2\)</span>, <span class="math inline">\(K\)</span>, and <span class="math inline">\(\sigma\)</span>.</p>
+<pre class="r"><code># Define negative log posterior function,
+# we&#39;re going to model the H1, H2 and K
+# values on the log scale, and we need to
+# model
+vonB_negLogPost &lt;- function(  theta = c( logH_1 = log(62.5), 
+                                         logH_2 = log(74.5), 
+                                         logK = log(0.16),
+                                         logsigma = 0 ),
+                              data = growthData,
+                              D = c(100,365),
+                              H2Prior = c(74.5, 74.5),
+                              KPrior = c(.16, .16/2) )
+{
+  # Exponentiate leading pars of vonB
+  pars &lt;- c(  H_1 = exp(theta[1]),
+              H_2 = exp(theta[2]),
+              K   = exp(theta[3]) )
+
+  # uncertainty in the observations
+  sigma &lt;- exp(theta[&quot;logsigma&quot;])
+
+  # Calculate expected observations in a new column
+  # of the data frame, then residuals,
+  # and then the negative-log-likelihood (with
+  # normalising scalar omitted)
+  data &lt;- data %&gt;%
+          mutate( expHeight = vonB(j, pars = pars, D = D),
+                  resid = expHeight - height,
+                  negloglik = 0.5*log(sigma^2) + 0.5 * resid^2/sigma^2 )
+
+
+  # Calculate observation NLL and H2/K neg log priors
+  nll     &lt;- sum(data$negloglik, na.rm = T)
+  nlp_H2  &lt;- 0
+  nlp_K   &lt;- 0
+  # Only calculate priors if parameters are given
+  if(!is.null(H2Prior))
+    nlp_H2  &lt;- 0.5 * (pars[2] - H2Prior[1])^2/H2Prior[2]^2
+  if(!is.null(KPrior))
+    nlp_K   &lt;- 0.5 * (pars[3] - KPrior[1])^2/KPrior[2]^2
+
+
+  objFun  &lt;- nll + nlp_H2 + nlp_K + 10 * log(sigma) 
+
+  return(objFun)
+}</code></pre>
+<p>I’m going to fit using <code>optim()</code> as my optimiser, with the Nelder-Mead optimisation method. The Nelder-Mead method is a <em>direct-search</em> method, as opposed to more common quasi-Newton methods of optimisation (see <a href="https://en.wikipedia.org/wiki/Nelder%E2%80%93Mead_method">Wikipedia</a>), which basically means that it uses the value of the objective function only, and no derivatives of the objective function. This makes it a little more robust to certain objective functions, albeit somewhat slower. I chose this because I have no need of the covariance matrix as an output (for now), which is one of the drawbacks of Nelder-Mead.</p>
+<pre class="r"><code># Fit with no priors
+fit1 &lt;- optim(  par = c(  logH_1 = log(62.5), 
+                           logH_2 = log(74.5), 
+                           logK = log(0.16/365),
+                           logsigma = 0),
+                fn = vonB_negLogPost,
+                D = c(100,365), data = growthData,
+                H2Prior = NULL,
+                KPrior = NULL,
+                method = &quot;Nelder-Mead&quot; )
+
+
+
+# Fit with priors on K
+fit2 &lt;- optim(  par = c(  logH_1 = log(62.5), 
+                           logH_2 = log(74.5), 
+                           logK = log(0.16/365),
+                           logsigma = 0),
+                fn = vonB_negLogPost,
+                D = c(100,365), data = growthData,
+                H2Prior = NULL,
+                KPrior = c(0.16,0.08),
+                method = &quot;Nelder-Mead&quot; )</code></pre>
+<p>The parameters of the two models are given in the following table, and the plots are shown below that. We can see that the largest</p>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:optFitPlot">Table 1: </span>Optimised parameters, adult height and negativ log-posterior values under both models.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+<span class="math display">\[H_1\]</span>
+</th>
+<th style="text-align:right;">
+<span class="math display">\[H_2\]</span>
+</th>
+<th style="text-align:right;">
+<span class="math display">\[K\]</span>
+</th>
+<th style="text-align:right;">
+<span class="math display">\[\sigma\]</span>
+</th>
+<th style="text-align:right;">
+<span class="math display">\[H_\infty\]</span>
+</th>
+<th style="text-align:right;">
+-log(Post)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+No Priors
+</td>
+<td style="text-align:right;">
+61.96
+</td>
+<td style="text-align:right;">
+75.81
+</td>
+<td style="text-align:right;">
+0.57
+</td>
+<td style="text-align:right;">
+0.85
+</td>
+<td style="text-align:right;">
+102.83
+</td>
+<td style="text-align:right;">
+6.363659
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Priors
+</td>
+<td style="text-align:right;">
+62.26
+</td>
+<td style="text-align:right;">
+76.71
+</td>
+<td style="text-align:right;">
+0.18
+</td>
+<td style="text-align:right;">
+0.95
+</td>
+<td style="text-align:right;">
+180.12
+</td>
+<td style="text-align:right;">
+8.692054
+</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/post/baby-growth/baby-growth_files/figure-html/optFitPlot-1.png" /><!-- --></p>
+<p>The model with no priors shows an adult (asymptotic) height of <span class="math inline">\(H_\infty = 102.83\)</span>, meaning that my son is forecast by this model to be a little bit over 1 metre tall. Looking at the graph, we can see that he’s going to reach that height at about 2000 days, or 5.5 years old, influenced by a growth rate parameter of <span class="math inline">\(K = 0.57\)</span>. Given that both my wife and I are taller than this, and we know of no reasons why we would expect him to be under the first percentile for height, I don’t fully believe this model. On the other hand, we have the model with priors predicting my son will reach his adult height of <span class="math inline">\(H_\infty = 180.12\)</span> at about 20 years of age, with a much lower growth rate <span class="math inline">\(K = 0.18\)</span>. Although the second model is guided by subjective prior distributions, I believe it more - not only because it’s almost exactly my height, but also because aside from the value of <span class="math inline">\(K\)</span> the model parameters are very close, and the negative-log-posterior values are also very close.</p>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<table class="table table-striped table-hover table-condensed table-responsive" style="width: auto !important; float: right; margin-left: 10px;">
+<caption>
+<span id="tab:unnamed-chunk-3">Table 2: </span>Data for my son’s health visits.
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+j
+</th>
+<th style="text-align:right;">
+height
+</th>
+<th style="text-align:right;">
+weight
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+56.0
+</td>
+<td style="text-align:right;">
+3.8
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+3.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+3.4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+4.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+4.1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+4.1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+4.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+4.9
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+5.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+59.0
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+</tr>
+<tr>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+5.1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:right;">
+<ul>
+<li></td>
+<td style="text-align:right;">
+5.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:right;">
+60.5
+</td>
+<td style="text-align:right;">
+5.4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+86
+</td>
+<td style="text-align:right;">
+60.5
+</td>
+<td style="text-align:right;">
+5.6
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:right;">
+62.5
+</td>
+<td style="text-align:right;">
+5.9
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+122
+</td>
+<td style="text-align:right;">
+64.0
+</td>
+<td style="text-align:right;">
+6.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+192
+</td>
+<td style="text-align:right;">
+68.0
+</td>
+<td style="text-align:right;">
+7.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+276
+</td>
+<td style="text-align:right;">
+74.5
+</td>
+<td style="text-align:right;">
+8.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+296
+</td>
+<td style="text-align:right;">
+71.5
+</td>
+<td style="text-align:right;">
+8.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+373
+</td>
+<td style="text-align:right;">
+74.5
+</td>
+<td style="text-align:right;">
+9.6
+</td>
+</tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>So, there we go. I fit a von Bertalanffy growth model to height observations from my son’s health appointments over the first year of his life (data to the right). My aim was to (1) see how well human growth data fit the vonB mode, and (2) predict his adult height from observations now. I found that the vonB model fits human growth data very well, at least during the first year of life where a single growth regime is present <span class="citation">(Karlberg 1987)</span>. On the other hand, I found extrapolating beyond the first year problematic, and required subjective prior distributions on leading parameters to achieve a sensible height prediction.</p>
+<p>The high growth rate of infants is likely the reason that the model without priors estimates a high <span class="math inline">\(K\)</span> value, reaching <span class="math inline">\(H_\infty\)</span> sometime during childhood. According to the ICP model, infants have a high but rapidly decreasing growth rate, which is replaced by a lower, more stable, rate in childhood, and another different rate during puberty, before adult height is reached <span class="citation">(Karlberg 1987)</span>. Later stages have a “humpy” growth pattern, where humps correspond to growth spurts during childhood and puberty.</p>
+<p>Further work could be conducted to generate uncertainty in my prediction. I used a penalised likelihood method to estimate the parameters of the vonB model, with prior distributions penalising deviations from the observed height at 1 year old, and deviations from a growth rate that would produce an adult height that was similar to a weighted average of my wife’s and my own heights. Parameter estimates and the forecast are all maximum likelihood estimates (posterior modes), with no uncertainty reported. Confidence intervals could be estimated by using the delta-method, bootstrapping the residuals on each observation, or by running a Markov-Chain Monte-Carlo numerical integration of the posterior to generate full posterior distributions of all parameters and the model.</p>
+<p>That’s all from me. Happy birthday to my son, thanks to my wife for growing him and being an awesome partner, and thanks to you for reading this nerdy Dad rant!</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-francis2016growth">
+<p>Francis, RIC Chris. 2016. “Growth in Age-Structured Stock Assessment Models.” <em>Fisheries Research</em> 180. Elsevier: 77–86.</p>
+</div>
+<div id="ref-gliozzi2012novel">
+<p>Gliozzi, Antonio S, Caterina Guiot, Pier Paolo Delsanto, and Dan A Iordache. 2012. “A Novel Approach to the Analysis of Human Growth.” <em>Theoretical Biology and Medical Modelling</em> 9 (1). BioMed Central: 17.</p>
+</div>
+<div id="ref-karlberg1987modelling">
+<p>Karlberg, Johan. 1987. “On the Modelling of Human Growth.” <em>Statistics in Medicine</em> 6 (2). Wiley Online Library: 185–92.</p>
+</div>
+<div id="ref-schnute1981versatile">
+<p>Schnute, Jon. 1981. “A Versatile Growth Model with Statistically Stable Parameters.” <em>Canadian Journal of Fisheries and Aquatic Sciences</em> 38 (9). NRC Research Press: 1128–40.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>yes, I know it’s not technically a rate<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/bio-pic.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Samuel Johnson</a></h5>
+    <h6 class="card-subtitle">PhD Candidate, Resource and Environmental Management</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:samuelj@sfu.ca" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/sdnjohnson" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.ca/citations?user=LoYfgnkAAAAJ" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/samueldnj" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="http://arxiv.org/a/johnson_s_3" target="_blank" rel="noopener">
+          <i class="ai ai-arxiv"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/files/JohnsonCV.pdf" >
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sdnjohnson-com-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//sdnjohnson-com-1.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+
+  </body>
+</html>
+
